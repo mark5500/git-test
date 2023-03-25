@@ -1,1 +1,15 @@
 this is an update
+
+So we:
+
+git clone <url>
+git checkout <commit-hash>
+git checkout -b update-branch
+
+// add the new files from DB
+git add -A
+git commit -m <commit-message>
+git rebase main
+git checkout main
+git merge update-branch
+git push
